@@ -1,0 +1,398 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+h1 {
+    letter-spacing: 0.15em;
+    margin: 15%px 50px;
+}
+
+@media all and (max-width: 767px){
+    h1 {
+        font-size: 35px;
+    }
+}
+
+@media all and (min-width: 767px){
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media all and (max-width: 480px){
+    h1 {
+        font-size: 26px;
+    }
+}
+
+
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+/* BUTTONS FOR PAGE SWITCHING */
+#fp-nav ul li a span {
+    background: #fff;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* NAVIGATION MENU */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.menu li,
+.menu a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    color:#fff;
+    transition: .5s ease;
+}
+
+.nav li.active{
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    width: 17vh;
+}
+
+.openbtn {
+    font-size: 20px;
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    background-color: #2E3092;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    left: 10%;
+}
+
+.closebtn{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+@media all and (min-width: 550px){
+    .menu a.icon {
+        display: none;
+    }
+}
+
+@media all and (max-width: 550px){
+    .menu a:not(:first-child), .menu li:not(:first-child) {
+        display: none;
+        }
+    
+    .menu a.icon {
+        position: absolute;
+        display:inline-block;
+        right: 10%;
+        top: 5%;
+    }
+}
+
+@media all and (max-width: 550px){
+    .menu.responsive {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color:brown;
+        transition: 0.3s;
+    }
+    .menu.responsive a.icon {
+        position:static;
+        right: 10%;
+        top: 5%;
+        display: block;
+    }
+    .menu.responsive a, .menu.responsive li {
+        display: block;
+        text-align: center;
+        font-size: 60px;
+        margin-top: 10vh;
+    }
+}
+
+/* HEAD */
+header {
+    position: relative;
+    background-color: #2E3092;
+    background-image: url('../media/pattern.png');
+    background-blend-mode:soft-light;
+    background-repeat: repeat-x;
+    background-position-y: top;
+    text-align: center;
+}
+
+.simona-photo {
+    border-radius: 50%;
+    background: url('../media/_MG_9567.JPG'), #2AB573;
+    background-size: cover, 50% 50%;
+    background-position: center, 0px top;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    margin: 0 auto;
+}
+
+
+.container-title {
+    position: absolute;
+    color: #fff;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+}
+
+.text-brown {
+    color: #C39A6B;
+}
+
+.container-icon {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    z-index: 1;
+    font-size: 35px;
+}
+
+.container-icon:hover {
+    animation: up-down 1s ease-in-out;
+}
+
+/* ANIMATION */
+
+@keyframes up-down {
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(15px);}
+    100% { transform: translateY(0px);}
+}
+
+@keyframes right-left {
+    0% { transform: translateX(0px);}
+    50% { transform: translateX(5px);}
+    100% { transform: translateX(0px);}
+}
+@keyframes left-right {
+    0% { transform: translateX(0px);}
+    50% { transform: translateX(-5px);}
+    100% { transform: translateX(0px);}
+}
+
+/* CURRICULUM */
+
+.curriculum {
+    background-color: #171344;
+    position: relative;
+}
+
+.curriculum h1{
+    color: #D11F58;
+}
+
+/* SKILLS */
+.skills {
+    background-color: #2AB573;
+    position: relative;
+}
+
+.contact {
+    background: url('https://images.unsplash.com/photo-1485939420171-378de92ecd4c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-position: cover;
+}
+
+/* Arrrows for horizontal sliding */
+
+.fp-controlArrow.fp-prev {
+    left: 0;
+    border: none;
+    width: 38px;
+    height: 50px;
+    background: url('../media/prev.png') no-repeat;
+    background-size:contain;
+    cursor: pointer;
+    color: white;
+    top: 50%;
+    left: 10%;
+}
+.fp-controlArrow.fp-next {
+    right: 0;
+    border: none;
+    width: 38px;
+    height: 50px;
+    background: url('../media/next.png') no-repeat;
+    background-size:contain;
+    cursor: pointer;
+    top: 50%;
+    right: 10%;
+}
+
+@media all and (max-width: 479px){
+    .fp-controlArrow.fp-prev {
+        left: 0;
+        border: none;
+        width: 38px;
+        height: 50px;
+        background: url('../media/prev.png') no-repeat;
+        background-size:contain;
+        cursor: pointer;
+        color: white;
+        top: 85%;
+        left: 3%;
+    }
+    .fp-controlArrow.fp-next {
+        right: 0;
+        border: none;
+        width: 38px;
+        height: 50px;
+        background: url('../media/next.png') no-repeat;
+        background-size:contain;
+        cursor: pointer;
+        top: 85%;
+        right: 3%;
+    }
+
+    .logo {
+        display:none;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .simona-photo{
+        width: 70vw;
+        height: 70vw;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px){
+    .logo {
+        display:none;
+    }
+}
+
+.fp-controlArrow.fp-next:hover {
+    animation: right-left 1s ease-in-out;
+}
+
+.fp-controlArrow.fp-prev:hover {
+    animation: left-right 1s ease-in-out;
+}
+
+
+
+
+/* Slides experience */
+
+.slide {
+    text-align: center;
+}
+
+.general {
+    background-color: #171344;
+}
+
+.art {
+    background-color: #2E3092;
+}
+
+.science {
+    background: url('../media/Sec5GFP_30C_e2500_w2Lumencor\ WF-475_s3.png'), #2AB573;
+    background-size: cover;
+    background-blend-mode:luminosity;
+}
+
+.programming {
+    background-color: #2E3092;
+}
+
+.experience-description {
+font-family: 'Share', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 41px;
+text-align: center;
+letter-spacing: 0.095em;
+margin: 50px 20%;
+
+color: #FFFFFF;
+}
+
+.description-small {
+margin: 25px 50px;
+font-family: 'Share', cursive;
+font-size: 24px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.095em;
+
+color: #D11F58;
+
+}
+
+.text-aquamarine {
+    color: #2AB573;
+}
+
+.text-red {
+    color: #D11F58;
+}
+
+.text-darkblue {
+    color: #171344;
+}
+
+@media all and (max-width: 479px){
+    .experience-description {
+        font-size: 26px;
+        margin: 35px 10%;
+    }
+}

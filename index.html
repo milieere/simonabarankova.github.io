@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FullPage.js</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<nav class="nav">
+		<a href="#home" class='logo'><img src="./media/logo.svg" alt="" class="logo"></a>
+
+
+		<ul id='menu' class='menu'>
+			<li data-menuanchor='home' class='active'>
+				<a href="#home">HOME</a>
+			</li>
+			<li data-menuanchor='story'>
+				<a href="#story">MY STORY</a>
+			</li>
+			<li data-menuanchor='portfolio'>
+				<a href="#portfolio">PORTFOLIO</a>
+			</li>
+			<li data-menuanchor='contact'>
+				<a href="#contact">CONTACT ME</a>
+			</li>
+			<a href="javascript:void(0);" class="icon" onclick=" closeNavClick()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</ul>
+	</nav>
+
+	<main id="fullpage">
+		<header class="section header">
+			<div class="simona-photo">
+			</div>
+			<div class="container-title">
+				<h1 class="title">
+					<span>SIMONA </span>
+					<span class='text-brown'>BARANKOVA</span>
+				</h1>
+				<h3 class="description">Graphic designer, developer & scientist</h2>
+			</div>
+			<div class="container-icon">
+				<p><a href="#story" class='texto-blanco'><i class="fas fa-chevron-down"></i></a></p>
+			</div>
+		</header>
+		<section class="section curriculum">
+			<article class="slide general">
+				<div class="experience-general">
+					<h1>WHO AM I?</h1>
+					<p class="experience-description">
+						MULTIDISCIPLINARY <b>RESEARCHER</b> PASSIONATE ABOUT <b>DESIGN</b> AND <b>TECHNOLOGIES</b>.<br>
+					</p>
+					<p class="description-small">Curiosity and drive to learn are in my DNA!</p>
+				</div>
+			</article>
+			<article class="slide art">
+				<div class="experience-art">
+					<h1><span class="text-aquamarine">graphic.designer</span></h1>
+					<p class="experience-description">
+						+8 years of experience as a graphic designer<br><br>
+						<span class="text-aquamarine">UI/UX design<br>
+						Logo & branding</span>
+					</p>
+				</div>
+			</article>
+			<article class="slide science">
+				<div class="experience-science">
+					<h1><span class='text-aquamarine'>biology.researcher</span></h1>
+					<p class="experience-description">
+						+ 3 years of experimental research in biology
+					</p>
+				</div>
+			</article>
+			<article class="slide programming">
+				<div class="experience-programming">
+					<h1><span class="text-red">web.developer/{}</span></h1>
+					<p class="experience-description">
+						+ 1 year of coding experience <br> <br>
+						<span class="text-red">JavaScript <br>
+						HTML/CSS <br>
+						Python <br>
+						R</span>
+					</p>
+				</div>
+			</article>
+		</section>
+		<section class="section skills">
+			<h1>Skills</h1>
+		</section>
+		<footer class="section contact">
+			<h1>Footer</h1>
+		</footer>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
