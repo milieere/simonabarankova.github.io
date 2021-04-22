@@ -23,29 +23,34 @@ const sectionsPage = new fullpage('#fullpage', {
 });
 
 function openNav() {
-	const x = document.getElementById("menu");
-	if (x.className === "menu") {
+	const x = document.querySelector("nav");
+	if (x.className === "nav") {
 		x.className += " responsive";
 	} else {
-		x.className = "menu";
+		x.className = "nav";
 	}
 }
 
-function closeNavClick() {
-	const x = document.getElementById("menu");
-	if (x.className === "menu") {
-		x.className += " responsive";
-	} else if (x.className === "menu responsive") {
-		x.onclick = openNav();
-	} else {
-		x.className = "menu";
-	}
-}
+const button = document.getElementById('myButton');
+const div = document.getElementById('menu');
+const icon = document.querySelector('.icon');
+const x = document.querySelector("nav");
+const menu = document.querySelector(".menucontainer");
+console.log(icon);
 
-function addOnclick() {
-	const links = document.getElementById('menu').querySelectorAll('a');
-	for (let i = 0; i < 4; i++) {
-		let link = links[i]
-		link.onclick = openNav();
+document.addEventListener('click', myFunction)
+
+function myFunction(e) {
+	console.log(e.target);
+
+	if((x.className === "nav") && (e.target === icon || e.target === itag)) {
+		x.className += " responsive";
+		menu.className += " responsive";
+	} else if((x.className === "nav responsive") && (e.target === icon || e.target === menu)) {
+		x.className = "nav";
+		menu.className = "menucontainer";
+	} else {
+		x.className = "nav";
+		menu.className = "menucontainer";
 	}
 }
