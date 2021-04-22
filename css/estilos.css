@@ -178,7 +178,7 @@ header {
 
 .simona-photo {
     border-radius: 50%;
-    background: url('../media/_MG_9567.JPG'), #2AB573;
+    background: url('media/_MG_9567.JPG'), #2AB573; 
     background-size: cover, 50% 50%;
     background-position: center, 0px top;
     background-repeat: no-repeat;
