@@ -178,7 +178,7 @@ header {
 
 .simona-photo {
     border-radius: 50%;
-    background: url('https://simonabarankova.github.io/simonabarankova.github.io/media/_MG_9567.JPG'), #2AB573; 
+    background: url('https://images.unsplash.com/photo-1619002117199-47c7f0427d21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=649&q=80'), #2AB573; 
     background-size: cover, 50% 50%;
     background-position: center, 0px top;
     background-repeat: no-repeat;
