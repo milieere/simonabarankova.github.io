@@ -25,6 +25,15 @@ h1 {
     margin: 15%px 50px;
 }
 
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+a:hover{
+    color: white;
+}
+
 @media all and (max-width: 767px){
     h1 {
         font-size: 35px;
@@ -63,6 +72,10 @@ h1 {
 
 .texto-negro {
 	color: #000;
+}
+
+.text-green {
+	color: #2AB573;
 }
 
 /* BUTTONS FOR PAGE SWITCHING */
@@ -179,13 +192,13 @@ header {
     background-blend-mode:soft-light;
     background-repeat: repeat-x;
     background-position-y: top;
-    background-position-x: center;
+    background-position: center;
     text-align: center;
 }
 
 .simona-photo {
     border-radius: 50%;
-    background: url('https://images.unsplash.com/photo-1619002117199-47c7f0427d21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=649&q=80'), #2AB573; 
+    background: url('../media/_MG_9567.JPG'), #2AB573; 
     background-size: cover, 50% 50%;
     background-position: center, 0px top;
     background-repeat: no-repeat;
@@ -217,8 +230,9 @@ header {
 
 .container-icon {
     position: absolute;
-    bottom: 3%;
     left: 50%;
+    transform: translateX(-50%);
+    bottom: 3%;
     z-index: 1;
     font-size: 35px;
 }
@@ -344,6 +358,8 @@ header {
 
 .slide {
     text-align: center;
+    position: relative;
+    z-index: -999;
 }
 
 .general {
@@ -401,9 +417,169 @@ color: #D11F58;
     color: #171344;
 }
 
-@media all and (max-width: 479px){
+@media all and (max-width: 550px){
     .experience-description {
-        font-size: 26px;
+        font-size: 21px;
         margin: 35px 10%;
+        line-height: 30px;
     }
 }
+
+.outer {
+    display: flex;
+    flex-flow: wrap;
+    …  
+}
+
+.inner {
+    flex: 0 0 50%;
+    …
+}
+
+.description-skills{
+    font-family: 'Share';
+    font-size: 26px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.yeast1{
+    animation: moveyeaststraight 10s infinite linear; 
+}
+
+.yeast2{
+    animation: moveyeastleft 10s infinite linear; 
+}
+
+.yeast3{
+    animation: moveyeastup 10s infinite linear; 
+}
+
+.yeast4{
+    animation: moveyeastdown 10s infinite linear; 
+}
+
+.yeast5 {
+    animation: moveyeastright 10s infinite linear; 
+}
+
+@keyframes moveyeastright {
+    0% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+
+    20% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(10%, 20%);
+        opacity: 30%;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+}
+
+@keyframes moveyeastleft {
+    0% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+
+    20% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-4%, -9%);
+        opacity: 30%;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+}
+
+@keyframes moveyeastup {
+    0% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+
+    20% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-5%, 7%);
+        opacity: 30%;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+}
+
+@keyframes moveyeastdown {
+    0% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+
+    20% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(5%, -6%);
+        opacity: 30%;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+}
+
+@keyframes moveyeaststraight {
+    0% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+
+    20% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(10%, 0);
+        opacity: 30%;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 80%;
+    }
+}
+
+svg {
+    position: absolute;
+    z-index: -900;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+    height: 75%;
+}
+
+.skills1{
+    background-color: #4e54c8;
+    text-align: center;
+}
+
