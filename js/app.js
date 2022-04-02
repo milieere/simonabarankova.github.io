@@ -12,8 +12,8 @@ const sectionsPage = new fullpage('#fullpage', {
 	//// ──────────────────────────────────────────────────
 	navigation: true, // Muesta la barra de navegación.
 	menu: '#menu', // Menu de navegación.
-    anchors: ['home', 'first', 'experience1', 'experience2', "experience3", "contact"], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
-	navigationTooltips: ['home', 'first', 'experience1', 'experience2', "experience3", "contact"], // Tooltips que mostrara por cada boton.
+    anchors: ['domu', 'prvni', 'zkuseno', 'erf', 'ewr', 'ewre'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+	//navigationTooltips: ['home', 'first', 'experience1', 'experience2', "experience3", "contact"], // Tooltips que mostrara por cada boton.
     showActiveTooltip: false, // Mostrar tooltip activa.
     
     	//   :::::: Secciones
